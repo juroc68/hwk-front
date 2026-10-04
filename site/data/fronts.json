@@ -1,0 +1,2341 @@
+{
+ "_lisezmoi": "Fichier de données de la visualisation. Chaque phase a une ligne 'front' : une liste de points [longitude, latitude] allant du NORD au SUD. Les Français sont à l'ouest de la ligne, les Allemands à l'est. Pour corriger un tracé, modifiez les points ; pour ajouter une phase, copiez un bloc existant. Les flèches vont de 'de' vers 'vers' ; camp = 'fr' ou 'de'.",
+ "zone": {
+  "ouest": 6.9434,
+  "sud": 47.7541,
+  "est": 7.3828,
+  "nord": 47.9899
+ },
+ "zone_combat": {
+  "nom": "Zone de combat principale du HWK",
+  "contour": [
+   [
+    7.095,
+    47.895
+   ],
+   [
+    7.215,
+    47.895
+   ],
+   [
+    7.215,
+    47.83
+   ],
+   [
+    7.095,
+    47.83
+   ],
+   [
+    7.095,
+    47.895
+   ]
+  ]
+ },
+ "phases": [
+  {
+   "id": "dec14",
+   "date": "1914-12-25",
+   "label": "25 déc. 1914",
+   "titre": "Les chasseurs prennent pied au sommet",
+   "texte": "Une trentaine de chasseurs alpins du 28e BCA s'installent sur le plateau du Silberloch et poussent un poste avancé jusqu'au sommet. Le 28 décembre, sans le savoir, les Allemands établissent un observatoire à quelques dizaines de mètres, sur le versant est.",
+   "unites": {
+    "fr": "28e BCA",
+    "de": "Landwehr"
+   },
+   "fleches": [
+    {
+     "camp": "fr",
+     "de": [
+      7.15,
+      47.859
+     ],
+     "vers": [
+      7.1595,
+      47.8612
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.156,
+     47.8655
+    ],
+    [
+     7.162,
+     47.8635
+    ],
+    [
+     7.165,
+     47.8612
+    ],
+    [
+     7.166,
+     47.859
+    ],
+    [
+     7.1665,
+     47.856
+    ],
+    [
+     7.167,
+     47.852
+    ],
+    [
+     7.1665,
+     47.848
+    ],
+    [
+     7.1655,
+     47.8445
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "jan15",
+   "date": "1915-01-22",
+   "label": "19-22 janv. 1915",
+   "titre": "Les Allemands s'emparent du sommet",
+   "texte": "Après plusieurs assauts, les Allemands encerclent la compagnie du lieutenant Canavy, isolée sur le sommet. Les renforts français (18e, 27e et 53e BCA) échouent sous le feu des Minenwerfer. Les survivants se rendent le 22 janvier. Au sud, le 25e RI a pris le Hirtzenstein.",
+   "unites": {
+    "fr": "28e BCA (Cie Canavy), 18e, 27e, 53e BCA, 25e RI",
+    "de": "Landwehr-Inf.-Rgt. 123, Inf.-Rgt. 25"
+   },
+   "fleches": [
+    {
+     "camp": "de",
+     "de": [
+      7.176,
+      47.864
+     ],
+     "vers": [
+      7.16,
+      47.8612
+     ]
+    },
+    {
+     "camp": "fr",
+     "de": [
+      7.156,
+      47.848
+     ],
+     "vers": [
+      7.168,
+      47.846
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.151,
+     47.865
+    ],
+    [
+     7.153,
+     47.863
+    ],
+    [
+     7.1545,
+     47.861
+    ],
+    [
+     7.156,
+     47.8585
+    ],
+    [
+     7.159,
+     47.8555
+    ],
+    [
+     7.1625,
+     47.8525
+    ],
+    [
+     7.166,
+     47.8495
+    ],
+    [
+     7.17,
+     47.8465
+    ],
+    [
+     7.169,
+     47.843
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "mar15",
+   "date": "1915-03-23",
+   "label": "5-23 mars 1915",
+   "titre": "La reconquête pas à pas",
+   "texte": "Le 13e BCA enlève la position de la Jägertanne le 5 mars. Le 152e RI le relève le 19 mars et, après un bombardement de 57 canons le 23, arrive à 150 mètres du sommet.",
+   "unites": {
+    "fr": "13e BCA, 152e RI",
+    "de": "Inf.-Rgt. 161, Inf.-Rgt. 25"
+   },
+   "fleches": [
+    {
+     "camp": "fr",
+     "de": [
+      7.149,
+      47.862
+     ],
+     "vers": [
+      7.1575,
+      47.8612
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.1545,
+     47.8655
+    ],
+    [
+     7.157,
+     47.863
+    ],
+    [
+     7.158,
+     47.8612
+    ],
+    [
+     7.1595,
+     47.859
+    ],
+    [
+     7.1615,
+     47.856
+    ],
+    [
+     7.164,
+     47.853
+    ],
+    [
+     7.167,
+     47.8495
+    ],
+    [
+     7.1705,
+     47.8465
+    ],
+    [
+     7.169,
+     47.843
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "mar26",
+   "date": "1915-03-26",
+   "label": "26 mars 1915",
+   "titre": "Le 152e RI reprend le sommet",
+   "texte": "Après trois heures et demie de bombardement, le 152e RI, appuyé par six bataillons de chasseurs, enlève le sommet, le rocher panorama (Aussichtsfelsen), le Bischofshut et les Rehfelsen supérieur et moyen. Les Allemands ne tiennent plus que le Rehfelsen inférieur. Depuis la crête, les Français voient la plaine d'Alsace jusqu'à Cernay.",
+   "unites": {
+    "fr": "152e RI, 7e, 13e, 15e, 27e, 28e, 53e BCA",
+    "de": "Inf.-Rgt. 25, Landwehr-Inf.-Rgt. 15, Res.-Inf.-Rgt. 75"
+   },
+   "fleches": [
+    {
+     "camp": "fr",
+     "de": [
+      7.154,
+      47.86
+     ],
+     "vers": [
+      7.166,
+      47.8605
+     ]
+    },
+    {
+     "camp": "fr",
+     "de": [
+      7.156,
+      47.8655
+     ],
+     "vers": [
+      7.166,
+      47.865
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.158,
+     47.8672
+    ],
+    [
+     7.164,
+     47.866
+    ],
+    [
+     7.169,
+     47.864
+    ],
+    [
+     7.1705,
+     47.8612
+    ],
+    [
+     7.17,
+     47.858
+    ],
+    [
+     7.169,
+     47.855
+    ],
+    [
+     7.1695,
+     47.851
+    ],
+    [
+     7.171,
+     47.847
+    ],
+    [
+     7.169,
+     47.843
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "avr15",
+   "date": "1915-04-26",
+   "label": "25-26 avr. 1915",
+   "titre": "Contre-attaque allemande, le sommet devient un no man's land",
+   "texte": "Le 25 avril, un assaut allemand coordonné reprend le Rehfelsen supérieur et le rocher panorama. Près de 1 000 hommes du 152e RI et du 57e RIT sont encerclés et capturés. Les Français reviennent le lendemain, mais le sommet reste entre les lignes : le front court désormais du sommet au Rehfelsen inférieur et au Hirtzenstein.",
+   "unites": {
+    "fr": "152e RI, 57e RIT",
+    "de": "Res.-Inf.-Rgt. 75, Res.-Jäger-Btl. 8, Garde-Jäger, Landwehr-Inf.-Rgt. 56"
+   },
+   "fleches": [
+    {
+     "camp": "de",
+     "de": [
+      7.176,
+      47.8615
+     ],
+     "vers": [
+      7.164,
+      47.8605
+     ]
+    },
+    {
+     "camp": "de",
+     "de": [
+      7.176,
+      47.868
+     ],
+     "vers": [
+      7.167,
+      47.8645
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.155,
+     47.865
+    ],
+    [
+     7.158,
+     47.863
+    ],
+    [
+     7.1592,
+     47.8612
+    ],
+    [
+     7.1612,
+     47.8597
+    ],
+    [
+     7.163,
+     47.857
+    ],
+    [
+     7.165,
+     47.854
+    ],
+    [
+     7.168,
+     47.85
+    ],
+    [
+     7.1705,
+     47.8465
+    ],
+    [
+     7.169,
+     47.843
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "oct15",
+   "date": "1915-10-15",
+   "label": "15-16 oct. 1915",
+   "titre": "Lance-flammes au sommet",
+   "texte": "Après avoir employé pour la première fois des lance-flammes en septembre, les Allemands atteignent le sommet le 15 octobre. Dès le lendemain, après un violent tir d'artillerie, le 334e RI et le 15e BCP reprennent le terrain perdu.",
+   "unites": {
+    "fr": "334e RI, 15e BCP",
+    "de": "Garde-Schützen-Btl., Res.-Jäger-Btl. 8, Landwehr-Inf.-Rgt. 56, Garde-Pionier-Btl."
+   },
+   "fleches": [
+    {
+     "camp": "de",
+     "de": [
+      7.17,
+      47.8612
+     ],
+     "vers": [
+      7.159,
+      47.861
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.154,
+     47.865
+    ],
+    [
+     7.1565,
+     47.863
+    ],
+    [
+     7.1575,
+     47.8612
+    ],
+    [
+     7.159,
+     47.8592
+    ],
+    [
+     7.162,
+     47.8565
+    ],
+    [
+     7.165,
+     47.854
+    ],
+    [
+     7.168,
+     47.85
+    ],
+    [
+     7.1705,
+     47.8465
+    ],
+    [
+     7.169,
+     47.843
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "dec21",
+   "date": "1915-12-21",
+   "label": "21 déc. 1915",
+   "titre": "La grande offensive française",
+   "texte": "Plus de 300 pièces d'artillerie tirent 25 000 obus en cinq heures. Les Français enlèvent le Hirtzenstein, les fortins Rohrburg et Grossherzog et s'enfoncent profondément vers les postes de commandement allemands. 1 400 Allemands sont faits prisonniers.",
+   "unites": {
+    "fr": "152e RI, 27e et 28e BCA (66e DI, général Serret)",
+    "de": "Jäger-Btl. 14, Res.-Inf.-Rgt. 78, Landwehr-Inf.-Rgt. 99"
+   },
+   "fleches": [
+    {
+     "camp": "fr",
+     "de": [
+      7.16,
+      47.8612
+     ],
+     "vers": [
+      7.1735,
+      47.861
+     ]
+    },
+    {
+     "camp": "fr",
+     "de": [
+      7.162,
+      47.854
+     ],
+     "vers": [
+      7.173,
+      47.8525
+     ]
+    },
+    {
+     "camp": "fr",
+     "de": [
+      7.162,
+      47.847
+     ],
+     "vers": [
+      7.1715,
+      47.845
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.16,
+     47.8675
+    ],
+    [
+     7.168,
+     47.8655
+    ],
+    [
+     7.174,
+     47.8625
+    ],
+    [
+     7.1765,
+     47.859
+    ],
+    [
+     7.176,
+     47.855
+    ],
+    [
+     7.175,
+     47.85
+    ],
+    [
+     7.1745,
+     47.846
+    ],
+    [
+     7.172,
+     47.842
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.168,
+     47.839
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "dec22",
+   "date": "1915-12-22",
+   "label": "22 déc. 1915",
+   "titre": "Les « Diables rouges » encerclés",
+   "texte": "La contre-attaque allemande est immédiate. Le 152e RI est encerclé sur le sommet : environ 600 tués et 1 500 prisonniers. Les Allemands reprennent l'essentiel du terrain ; les Français gardent le Hirtzenstein.",
+   "unites": {
+    "fr": "152e RI",
+    "de": "Res.-Jäger-Btl. 8"
+   },
+   "fleches": [
+    {
+     "camp": "de",
+     "de": [
+      7.178,
+      47.864
+     ],
+     "vers": [
+      7.165,
+      47.8615
+     ]
+    },
+    {
+     "camp": "de",
+     "de": [
+      7.178,
+      47.856
+     ],
+     "vers": [
+      7.166,
+      47.8565
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.155,
+     47.865
+    ],
+    [
+     7.158,
+     47.863
+    ],
+    [
+     7.1592,
+     47.8612
+    ],
+    [
+     7.1612,
+     47.8597
+    ],
+    [
+     7.163,
+     47.857
+    ],
+    [
+     7.165,
+     47.854
+    ],
+    [
+     7.1685,
+     47.85
+    ],
+    [
+     7.172,
+     47.8465
+    ],
+    [
+     7.17,
+     47.8425
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "dec28",
+   "date": "1915-12-28",
+   "label": "28-30 déc. 1915",
+   "titre": "Combats au Rehfelsen, le général Serret blessé",
+   "texte": "Le 12e BCA enlève une partie du Rehfelsen inférieur le 28 décembre. Le lendemain, le général Serret, qui commande la 66e DI, est grièvement blessé ; il meurt le 6 janvier 1916. Le 30, la Garde reprend le Rehfelsen.",
+   "unites": {
+    "fr": "12e BCA, 66e DI",
+    "de": "Res.-Inf.-Rgt. 74, Garde-Jäger"
+   },
+   "fleches": [
+    {
+     "camp": "fr",
+     "de": [
+      7.156,
+      47.866
+     ],
+     "vers": [
+      7.164,
+      47.864
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.156,
+     47.8655
+    ],
+    [
+     7.161,
+     47.8645
+    ],
+    [
+     7.165,
+     47.863
+    ],
+    [
+     7.165,
+     47.8608
+    ],
+    [
+     7.163,
+     47.859
+    ],
+    [
+     7.163,
+     47.857
+    ],
+    [
+     7.165,
+     47.854
+    ],
+    [
+     7.1685,
+     47.85
+    ],
+    [
+     7.172,
+     47.8465
+    ],
+    [
+     7.17,
+     47.8425
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "jan16",
+   "date": "1916-01-08",
+   "label": "8 janv. 1916",
+   "titre": "Retour au point de départ",
+   "texte": "Dernière grande attaque : après cinq heures de préparation, les régiments allemands 188 et 189 reprennent le Hirtzenstein. Les deux armées se retrouvent presque exactement sur les lignes de janvier 1915. Le front ne bougera plus.",
+   "unites": {
+    "fr": "66e DI",
+    "de": "Inf.-Rgt. 188, Inf.-Rgt. 189"
+   },
+   "fleches": [
+    {
+     "camp": "de",
+     "de": [
+      7.177,
+      47.847
+     ],
+     "vers": [
+      7.167,
+      47.8455
+     ]
+    }
+   ],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.155,
+     47.865
+    ],
+    [
+     7.158,
+     47.863
+    ],
+    [
+     7.1592,
+     47.8612
+    ],
+    [
+     7.1612,
+     47.8597
+    ],
+    [
+     7.163,
+     47.857
+    ],
+    [
+     7.165,
+     47.854
+    ],
+    [
+     7.1655,
+     47.85
+    ],
+    [
+     7.166,
+     47.847
+    ],
+    [
+     7.165,
+     47.844
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "stable",
+   "date": "1917-01-28",
+   "label": "1916-1918",
+   "titre": "Le front figé",
+   "texte": "Plus d'offensive majeure : guerre de mines, coups de main et artillerie. Les deux camps bétonnent leurs positions (Festen allemandes, abris français). Le 28 janvier 1917, l'explosion d'un dépôt de munitions dans une galerie tue 63 soldats allemands du 124e Landwehr, toujours ensevelis sur place. Le 15 octobre 1918, des troupes américaines relèvent les Français.",
+   "unites": {
+    "fr": "Régiments territoriaux, puis troupes américaines (oct. 1918)",
+    "de": "Landwehr-Inf.-Rgt. 124"
+   },
+   "fleches": [],
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.155,
+     47.865
+    ],
+    [
+     7.158,
+     47.863
+    ],
+    [
+     7.1592,
+     47.8612
+    ],
+    [
+     7.1612,
+     47.8597
+    ],
+    [
+     7.163,
+     47.857
+    ],
+    [
+     7.165,
+     47.854
+    ],
+    [
+     7.1655,
+     47.85
+    ],
+    [
+     7.166,
+     47.847
+    ],
+    [
+     7.165,
+     47.844
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  },
+  {
+   "id": "nov18",
+   "date": "1918-11-11",
+   "label": "11 nov. 1918",
+   "titre": "Armistice",
+   "texte": "Le dernier soldat allemand tué au HWK tombe le 4 novembre. L'arrière-garde du 124e Landwehr quitte la montagne le 15 novembre. Bilan : entre 20 000 et 30 000 morts selon l'historien Jean-Yves Le Naour (le chiffre souvent cité de 60 000 est exagéré).",
+   "unites": {
+    "fr": "",
+    "de": "Landwehr-Inf.-Rgt. 124"
+   },
+   "fleches": [],
+   "fin": true,
+   "front": [
+    [
+     7.092,
+     47.99
+    ],
+    [
+     7.088,
+     47.96
+    ],
+    [
+     7.086,
+     47.95
+    ],
+    [
+     7.09,
+     47.938
+    ],
+    [
+     7.102,
+     47.926
+    ],
+    [
+     7.115,
+     47.916
+    ],
+    [
+     7.122,
+     47.909
+    ],
+    [
+     7.13,
+     47.902
+    ],
+    [
+     7.137,
+     47.895
+    ],
+    [
+     7.1385,
+     47.889
+    ],
+    [
+     7.14,
+     47.884
+    ],
+    [
+     7.1405,
+     47.881
+    ],
+    [
+     7.146,
+     47.876
+    ],
+    [
+     7.1495,
+     47.8735
+    ],
+    [
+     7.1525,
+     47.871
+    ],
+    [
+     7.153,
+     47.868
+    ],
+    [
+     7.155,
+     47.865
+    ],
+    [
+     7.158,
+     47.863
+    ],
+    [
+     7.1592,
+     47.8612
+    ],
+    [
+     7.1612,
+     47.8597
+    ],
+    [
+     7.163,
+     47.857
+    ],
+    [
+     7.165,
+     47.854
+    ],
+    [
+     7.1655,
+     47.85
+    ],
+    [
+     7.166,
+     47.847
+    ],
+    [
+     7.165,
+     47.844
+    ],
+    [
+     7.163,
+     47.84
+    ],
+    [
+     7.161,
+     47.835
+    ],
+    [
+     7.16,
+     47.83
+    ],
+    [
+     7.15,
+     47.822
+    ],
+    [
+     7.148,
+     47.815
+    ],
+    [
+     7.149,
+     47.805
+    ],
+    [
+     7.144,
+     47.79
+    ],
+    [
+     7.142,
+     47.778
+    ],
+    [
+     7.148,
+     47.765
+    ],
+    [
+     7.152,
+     47.76
+    ],
+    [
+     7.153,
+     47.754
+    ]
+   ]
+  }
+ ],
+ "reperes": [
+  {
+   "nom": "Sommet",
+   "detail": "956 m · Croix",
+   "pos": [
+    7.161,
+    47.8609
+   ],
+   "rang": 1
+  },
+  {
+   "nom": "Monument national",
+   "detail": "Crypte et nécropole",
+   "pos": [
+    7.1501,
+    47.8588
+   ],
+   "rang": 1
+  },
+  {
+   "nom": "Silberloch",
+   "detail": "Arrière français",
+   "pos": [
+    7.1575,
+    47.8574
+   ],
+   "rang": 2
+  },
+  {
+   "nom": "Nécropole du Silberloch",
+   "detail": "1 264 tombes",
+   "pos": [
+    7.15093,
+    47.85893
+   ],
+   "rang": 3
+  },
+  {
+   "nom": "Historial",
+   "detail": "Franco-allemand, 2017",
+   "pos": [
+    7.14905,
+    47.85774
+   ],
+   "rang": 3
+  },
+  {
+   "nom": "Roche Sermet",
+   "detail": "Observatoire français",
+   "pos": [
+    7.157,
+    47.8616
+   ],
+   "rang": 3
+  },
+  {
+   "nom": "Aussichtsfelsen",
+   "detail": "Rocher panorama",
+   "pos": [
+    7.1655,
+    47.8595
+   ],
+   "rang": 2
+  },
+  {
+   "nom": "Feste Rohrburg",
+   "detail": "Fortin allemand",
+   "pos": [
+    7.164,
+    47.8598
+   ],
+   "rang": 3
+  },
+  {
+   "nom": "Rehfelsen",
+   "detail": "Rochers du versant est",
+   "pos": [
+    7.168,
+    47.864
+   ],
+   "rang": 3
+  },
+  {
+   "nom": "Hirtzenstein",
+   "detail": "Rocher, 572 m",
+   "pos": [
+    7.1688,
+    47.8457
+   ],
+   "rang": 2
+  },
+  {
+   "nom": "Molkenrain",
+   "detail": "1125 m",
+   "pos": [
+    7.1299,
+    47.8541
+   ],
+   "rang": 2
+  },
+  {
+   "nom": "Sudelkopf",
+   "detail": "1012 m",
+   "pos": [
+    7.1309,
+    47.8858
+   ],
+   "rang": 3
+  },
+  {
+   "nom": "Wattwiller",
+   "detail": "Occupé par les Allemands",
+   "pos": [
+    7.1805,
+    47.8372
+   ],
+   "rang": 1
+  },
+  {
+   "nom": "Hartmannswiller",
+   "detail": "",
+   "pos": [
+    7.2125,
+    47.8626
+   ],
+   "rang": 1
+  },
+  {
+   "nom": "Grand Ballon",
+   "detail": "1424 m · Français",
+   "pos": [
+    7.0984,
+    47.9008
+   ],
+   "rang": 1
+  },
+  {
+   "nom": "Judenhut",
+   "detail": "Position française",
+   "pos": [
+    7.1147,
+    47.9103
+   ],
+   "rang": 2
+  },
+  {
+   "nom": "Linthal",
+   "detail": "Allemand",
+   "pos": [
+    7.1288,
+    47.9481
+   ],
+   "rang": 2
+  },
+  {
+   "nom": "Cernay",
+   "detail": "Allemand",
+   "pos": [
+    7.1788,
+    47.8087
+   ],
+   "rang": 1
+  },
+  {
+   "nom": "Thann",
+   "detail": "Français",
+   "pos": [
+    7.1021,
+    47.8101
+   ],
+   "rang": 1
+  },
+  {
+   "nom": "Steinbach",
+   "detail": "",
+   "pos": [
+    7.1534,
+    47.8211
+   ],
+   "rang": 2
+  },
+  {
+   "nom": "Guebwiller",
+   "detail": "Allemand",
+   "pos": [
+    7.2113,
+    47.9095
+   ],
+   "rang": 1
+  },
+  {
+   "nom": "Wuenheim",
+   "detail": "",
+   "pos": [
+    7.2074,
+    47.8747
+   ],
+   "rang": 2
+  }
+ ],
+ "sources": [
+  {
+   "t": "Bataille du Hartmannswillerkopf, Wikipédia",
+   "u": "https://fr.wikipedia.org/wiki/Bataille_du_Hartmannswillerkopf"
+  },
+  {
+   "t": "La Grande Guerre, commune de Wattwiller",
+   "u": "https://wattwiller.fr/fr/rb/47374/la-grande-guerre-1914-1918"
+  },
+  {
+   "t": "Le Judenhut, lieux-insolites.fr",
+   "u": "https://www.lieux-insolites.fr/cicatrice/14-18/judenhut/judenhut.htm"
+  },
+  {
+   "t": "Repères du sentier du HWK, OpenStreetMap",
+   "u": "https://www.openstreetmap.org/#map=16/47.8605/7.1610"
+  },
+  {
+   "t": "Relief LiDAR HD et orthophoto, IGN Géoplateforme",
+   "u": "https://geoservices.ign.fr/"
+  }
+ ]
+}
