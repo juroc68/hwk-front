@@ -5,7 +5,7 @@ import { ease } from "./front.js";
 export function createTimeline(map, phases, front) {
   const n = phases.length;
   let t = 0, playing = false, holdStart = 0, transStart = 0, from = 0, target = 0;
-  let arrowStart = 0, arrowKey = "", shownPhase = -1;
+  let arrowKey = "", shownPhase = -1, lastT = 0, dir = 1;
 
   function render() {
     const g = front.geometry(t);
@@ -27,7 +27,23 @@ export function createTimeline(map, phases, front) {
     $("epilogue").hidden = !p.fin;
     document.querySelectorAll(".tick").forEach((el, i) => el.classList.toggle("on", i === k));
     document.querySelectorAll(".years span").forEach((el) => el.classList.toggle("cur", +el.dataset.k === k));
-    arrowStart = performance.now();
+  }
+
+  // Flèches : celles de la phase vers laquelle on va se dessinent au même rythme que le front
+  // (même courbe d'accélération) et atteignent leur pointe quand la ligne arrive.
+  function drawArrows() {
+    if (t !== lastT) dir = t > lastT ? 1 : -1;
+    lastT = t;
+    const base = Math.floor(t), frac = t - base;
+    let phase = base, progress = 1;
+    if (frac > 1e-6) {
+      if (dir > 0) { phase = base + 1; progress = ease(frac); } // en avant : la phase suivante se dessine
+      else progress = 1 - ease(frac); // en arrière : on revient vers la phase précédente
+    }
+    const key = `${phase}:${progress.toFixed(3)}`;
+    if (key === arrowKey) return; // ne redessiner que si quelque chose change
+    arrowKey = key;
+    map.getSource("arrows").setData(front.arrows(phase, progress));
   }
 
   function startTransition(k) {
@@ -47,11 +63,7 @@ export function createTimeline(map, phases, front) {
     }
     const k = Math.round(t);
     setStory(k);
-    // flèches : ne redessiner que pendant leur apparition ou quand la phase change
-    const settled = Math.abs(t - k) < 0.02;
-    const p = reduceMotion ? 1 : Math.min(1, (now - arrowStart) / 1200);
-    const key = settled ? `${k}:${p}` : "none";
-    if (key !== arrowKey) { arrowKey = key; map.getSource("arrows").setData(front.arrows(settled ? k : null, ease(p))); }
+    drawArrows();
     requestAnimationFrame(frame);
   }
 
