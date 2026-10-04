@@ -6,6 +6,8 @@ zones tenues par les armées française et allemande phase par phase, modèles 3
 
 Réalisée pour l'Amicale du Hartmannswillerkopf. Les tracés du front sont approximatifs et à valider.
 
+![Carte 3D du Hartmannswillerkopf : phase du 26 mars 1915, zones française et allemande sur le relief LiDAR, récit de la phase à gauche](docs/capture.jpg)
+
 ## Développement
 
 Prérequis : Node.js 20 ou plus récent.
