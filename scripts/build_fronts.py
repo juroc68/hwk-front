@@ -218,13 +218,13 @@ out = dict(
                "points [longitude, latitude] allant du NORD au SUD. Les Français sont à l'ouest de la ligne, "
                "les Allemands à l'est. Pour corriger un tracé, modifiez les points ; pour ajouter une phase, "
                "copiez un bloc existant. Les flèches vont de 'de' vers 'vers' ; camp = 'fr' ou 'de'."),
-    zone=dict(ouest=6.9434, sud=47.7541, est=7.3828, nord=47.9899),  # emprise texturée de la carte
+    zone=dict(ouest=6.9434, sud=47.7541, est=7.3828, nord=47.9899),  # emprise de la carte (textures)
     zone_combat=dict(nom="Zone de combat principale du HWK", contour=zone_combat()),
     phases=[{**{k: v for k, v in p.items() if k != "front"}, "front": ligne(CENTRES[p["front"]])} for p in PHASES],
     reperes=REPERES,
     sources=SOURCES,
 )
-dst = os.path.join(os.path.dirname(__file__), "..", "site", "data", "fronts.json")
+dst = os.path.join(os.path.dirname(__file__), "..", "public", "data", "fronts.json")
 os.makedirs(os.path.dirname(dst), exist_ok=True)
 json.dump(out, open(dst, "w", encoding="utf8"), ensure_ascii=False, indent=1)
 print("ok", len(out["phases"]), "phases")

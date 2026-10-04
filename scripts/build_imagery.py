@@ -1,8 +1,8 @@
 """Télécharge l'ombrage LiDAR HD et l'orthophoto IGN (WMTS Géoplateforme)
 et les assemble en tuiles JPEG de 1024 px (4 x 4 tuiles IGN de niveau z+2).
 
-La page publiée ne peut pas appeler data.geopf.fr : tout est embarqué.
-Sortie : site/lidar/{z}/{x}/{y}.jpg, site/lidar-hd/..., site/ortho/...
+Les tuiles sont servies avec le site (public/) : la page ne dépend pas des serveurs de l'IGN.
+Sortie : public/lidar/{z}/{x}/{y}.jpg, public/lidar-hd/..., public/ortho/...
 """
 import io, math, os, sys, urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -11,7 +11,7 @@ from PIL import Image
 OUTER = (7.095, 47.830, 7.215, 47.895)
 CORE = (7.130, 47.838, 7.190, 47.882)
 WIDE = (6.98, 47.76, 7.34, 47.96)  # contexte : niveau 12 seulement
-ROOT = os.path.join(os.path.dirname(__file__), "..", "site")
+ROOT = os.path.join(os.path.dirname(__file__), "..", "public")
 WMTS = ("https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER={layer}"
         "&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT={fmt}")
 LIDAR = ("IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW", "image/png")

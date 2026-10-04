@@ -9,7 +9,7 @@ import json, math, os
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SITE = os.path.join(HERE, "..", "site")
+SITE = os.path.join(HERE, "..", "public")
 ORIGINE = (7.16102, 47.86090)  # croix sommitale (OSM node 2805761238)
 M_LAT = 111320.0
 M_LON = 111320.0 * math.cos(math.radians(ORIGINE[1]))

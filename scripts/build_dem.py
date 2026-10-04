@@ -1,7 +1,7 @@
 """Télécharge le MNT IGN (RGE ALTI) autour du Hartmannswillerkopf et l'encode
 en tuiles Terrarium 512 px (Web Mercator), lisibles par MapLibre (raster-dem).
 
-Sortie : site/dem/{z}/{x}/{y}.png  +  site/dem/meta.json
+Sortie : public/dem/{z}/{x}/{y}.png  +  public/dem/meta.json
 Pur Python (pas de numpy) : le PNG est écrit à la main avec zlib.
 """
 import json, math, os, struct, sys, urllib.request, zlib
@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor
 BBOX = (7.095, 47.830, 7.215, 47.895)  # lon_min, lat_min, lon_max, lat_max
 ZOOMS = range(12, 15)                    # z14 en 512 px ≈ 3,2 m / pixel
 SIZE = 512
-OUT = os.path.join(os.path.dirname(__file__), "..", "site", "dem")
+OUT = os.path.join(os.path.dirname(__file__), "..", "public", "dem")
 R = 6378137.0
 WMS = ("https://data.geopf.fr/wms-r?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap"
        "&LAYERS=ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES&STYLES=&CRS=EPSG:3857"
