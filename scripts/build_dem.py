@@ -1,10 +1,10 @@
 """Télécharge le MNT IGN (RGE ALTI) autour du Hartmannswillerkopf et l'encode
 en tuiles Terrarium 512 px (Web Mercator), lisibles par MapLibre (raster-dem).
 
-Sortie : public/dem/{z}/{x}/{y}.png  +  public/dem/meta.json
+Sortie : public/dem/{z}/{x}/{y}.png
 Pur Python (pas de numpy) : le PNG est écrit à la main avec zlib.
 """
-import json, math, os, struct, sys, urllib.request, zlib
+import math, os, struct, sys, urllib.request, zlib
 from concurrent.futures import ThreadPoolExecutor
 
 BBOX = (7.095, 47.830, 7.215, 47.895)  # lon_min, lat_min, lon_max, lat_max
@@ -87,5 +87,3 @@ print(len(jobs), "tuiles")
 with ThreadPoolExecutor(6) as ex:
     for z, x, y, mm in ex.map(lambda j: fetch(*j), jobs):
         print(z, x, y, mm)
-json.dump({"bounds": BBOX, "minzoom": min(ZOOMS), "maxzoom": max(ZOOMS), "tileSize": SIZE},
-          open(os.path.join(OUT, "meta.json"), "w"))
