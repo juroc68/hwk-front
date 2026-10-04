@@ -173,8 +173,8 @@ async function texTile(mode, z, x, y) {
     g.clearRect(0, 0, x0 * TEX, TEX);
     g.clearRect(x1 * TEX, 0, TEX, TEX);
   }
-  // PNG quand une partie est transparente (bords de la carte, vue lointaine)
-  return (await c.convertToBlob(z < 12 || !clip.full ? { type: "image/png" } : { type: "image/jpeg", quality: 0.9 })).arrayBuffer();
+  // image transmise telle quelle à MapLibre : pas de ré-encodage JPEG/PNG, très coûteux sur mobile
+  return c.transferToImageBitmap();
 }
 
 export function registerProtocols(maplibregl) {
@@ -185,7 +185,7 @@ export function registerProtocols(maplibregl) {
   maplibregl.addProtocol("hwktex", async ({ url }) => {
     const [mode, ...zxy] = url.replace("hwktex://", "").split("/");
     const [z, x, y] = zxy.map(Number);
-    return { data: await texTile(mode, z, x, y) };
+    return { data: await texTile(mode, z, x, y) }; // ImageBitmap
   });
 }
 
