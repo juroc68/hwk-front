@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Front du Hartmannswillerkopf</title>
+<meta name="description" content="Carte 3D du front du Hartmannswillerkopf (Vieil Armand) de 1914 à 1918 sur le relief LiDAR de l'IGN.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+Sans+SC:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+</head>
+<body>
+<div id="app">
+  <div id="map" role="application" aria-label="Carte 3D du Hartmannswillerkopf"></div>
+  <div class="loading" id="loading">chargement du relief…</div>
+
+  <aside class="sidebar" id="sidebar" aria-label="Récit et légende">
+    <header class="side-head">
+      <div class="eyebrow">Vieil Armand · Haut-Rhin · 956 m</div>
+      <h1>Le front du Hartmannswillerkopf, 1914-1918</h1>
+      <p class="intro">Relief réel issu du LiDAR de l'IGN. Les zones tenues par chaque armée évoluent au fil des combats.</p>
+      <div class="legend">
+        <span><i class="sw fr"></i>Français</span>
+        <span><i class="sw de"></i>Allemands</span>
+        <span><i class="sw nml"></i>No man's land</span>
+        <span><i class="sw zone"></i>Zone de combat du HWK</span>
+      </div>
+      <button class="collapse-btn" id="sideClose" aria-label="Replier le panneau" title="Replier le panneau">«</button>
+    </header>
+
+    <section class="story" id="story" aria-live="polite">
+      <div class="when">
+        <span class="date" id="stDate"></span>
+        <span class="count" id="stCount"></span>
+      </div>
+      <h2 id="stTitle"></h2>
+      <div class="story-body" id="storyBody">
+        <p id="stText"></p>
+        <div class="units">
+          <div><span class="who fr">français</span><span id="stFr"></span></div>
+          <div><span class="who de">allemands</span><span id="stDe"></span></div>
+        </div>
+        <div class="epilogue" id="epilogue" hidden>
+          <h3>Et 1939-1945 ?</h3>
+          Le Hartmannswillerkopf n'a pas été un champ de bataille de la Seconde Guerre mondiale. L'Alsace, annexée de fait en 1940, est libérée au cours de l'hiver 1944-1945 ; le secteur de Cernay et Wattwiller l'est début février 1945, lors de la réduction de la poche de Colmar. En décembre 1944, un bombardier Halifax du 433e escadron canadien s'écrase près du Molkenrain, où une stèle rappelle son équipage.
+        </div>
+        <div class="caveat">Les lignes sont reconstituées de façon approximative.</div>
+      </div>
+      <button class="story-toggle" id="stToggle" aria-expanded="false" aria-controls="storyBody" aria-label="Lire le récit" title="Lire le récit">
+        <!-- icônes « eye » et « eye-closed » de Lucide (licence ISC) -->
+        <svg class="i-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+        <svg class="i-close" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-.722-3.25"/><path d="M2 8a10.645 10.645 0 0 0 20 0"/><path d="m20 15-1.726-2.05"/><path d="m4 15 1.726-2.05"/><path d="m9 18 .722-3.25"/></svg>
+      </button>
+    </section>
+
+    <details class="sources" id="sources">
+      <summary>Sources et crédits</summary>
+      <ul id="sourcesList"></ul>
+      <p>Tracés approximatifs reconstitués d'après ces sources, à valider par l'Amicale du Hartmannswillerkopf. Relief, ombrage LiDAR HD et orthophoto : IGN, Licence Ouverte. Repères : © contributeurs OpenStreetMap.</p>
+    </details>
+  </aside>
+  <button class="btn side-open" id="sideOpen" aria-label="Afficher le panneau" title="Afficher le panneau">» récit</button>
+
+  <div class="view-ctl">
+    <button class="btn view-btn" id="viewBtn" aria-expanded="false" aria-controls="viewPanel">
+      <!-- icône « eye » de Lucide (licence ISC) -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+      affichage
+    </button>
+    <div class="view-panel" id="viewPanel" role="dialog" aria-label="Options d'affichage">
+      <div class="layout-choice">
+        <h3>disposition</h3>
+        <div class="seg" role="group" aria-label="Disposition">
+          <button class="btn" id="layoutSide" aria-pressed="false">barre latérale</button>
+          <button class="btn" id="layoutFloat" aria-pressed="true">cadres flottants</button>
+        </div>
+      </div>
+      <h3>fond de carte</h3>
+      <div class="seg" role="group" aria-label="Fond de carte">
+        <button class="btn" id="bgMix" aria-pressed="true">photo + relief</button>
+        <button class="btn" id="bgLidar" aria-pressed="false">lidar</button>
+        <button class="btn" id="bgOrtho" aria-pressed="false">photo</button>
+      </div>
+      <h3>afficher</h3>
+      <label class="toggle"><input type="checkbox" role="switch" id="tgExt" checked><span>Front hors zone HWK</span></label>
+      <label class="toggle"><input type="checkbox" role="switch" id="tgZone" checked><span>Contour de la zone de combat</span></label>
+      <label class="toggle"><input type="checkbox" role="switch" id="tgArrows" checked><span>Flèches d'attaque</span></label>
+      <label class="toggle"><input type="checkbox" role="switch" id="tgPins" checked><span>Noms des lieux</span></label>
+      <label class="toggle"><input type="checkbox" role="switch" id="tgModels" checked><span>Monuments en 3D</span></label>
+      <div class="view-actions">
+        <button class="btn" id="resetView">vue d'ensemble</button>
+        <button class="btn" id="fullscreen">plein écran</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="gizmo" id="gizmo" aria-label="Navigation 3D">
+    <div class="orbit" id="gzOrbit" title="Glisser pour pivoter autour du centre (ou bouton molette sur la carte)">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <g id="gzRose">
+          <circle cx="50" cy="50" r="44" class="ring"/>
+          <g class="ticks"></g>
+          <path d="M50 4 L55 16 L45 16 Z" class="north"/>
+          <text x="50" y="27" class="nlabel">N</text>
+        </g>
+      </svg>
+      <button class="pan" id="gzPan" title="Glisser pour déplacer la vue (ou Maj + bouton molette)" aria-label="Déplacer la vue">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 4h-2v5h5V9l4 3-4 3v-2h-5v5h2l-3 4-3-4h2v-5H6v2l-4-3 4-3v2h5V6H9z"/></svg>
+      </button>
+    </div>
+    <div class="zoomers">
+      <button class="btn" id="gzIn" aria-label="Zoomer">+</button>
+      <button class="btn" id="gzNorth" aria-label="Remettre le nord en haut" title="Nord en haut">N</button>
+      <button class="btn" id="gzOut" aria-label="Dézoomer">−</button>
+    </div>
+  </div>
+
+  <div class="controls" role="group" aria-label="Lecture de la chronologie">
+    <button class="btn step" id="prev" aria-label="Phase précédente" title="Phase précédente">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" x2="5" y1="19" y2="5"/></svg>
+    </button>
+    <button class="btn" id="play" aria-label="Lecture">
+      <!-- icônes « play », « pause », « skip-back » et « skip-forward » de Lucide (licence ISC) ; play / pause sur mobile -->
+      <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+      <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></svg>
+      <span class="play-label">lecture</span>
+    </button>
+    <button class="btn step" id="next" aria-label="Phase suivante" title="Phase suivante">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" x2="19" y1="5" y2="19"/></svg>
+    </button>
+  </div>
+  <div class="timeline">
+    <div class="track" id="track">
+      <input type="range" id="scrub" min="0" max="1" step="0.001" value="0" aria-label="Avancer dans le temps">
+    </div>
+    <div class="years" id="years"></div>
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
