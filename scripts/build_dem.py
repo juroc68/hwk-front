@@ -10,6 +10,9 @@ from concurrent.futures import ThreadPoolExecutor
 BBOX = (7.095, 47.830, 7.215, 47.895)  # lon_min, lat_min, lon_max, lat_max
 ZOOMS = range(12, 15)                    # z14 en 512 px ≈ 3,2 m / pixel
 SIZE = 512
+# Altitudes arrondies au quart de mètre : invisible à 3 m par pixel, mais l'octet des
+# fractions de mètre n'est plus du bruit et les PNG pèsent près de trois fois moins.
+STEP = 0.25
 OUT = os.path.join(os.path.dirname(__file__), "..", "public", "dem")
 R = 6378137.0
 WMS = ("https://data.geopf.fr/wms-r?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap"
@@ -67,7 +70,7 @@ def fetch(z, x, y):
             if v < -100 or v > 5000:  # nodata (hors France) : niveau de la plaine
                 v = 230.0
             hmin, hmax = min(hmin, v), max(hmax, v)
-            t = round((v + 32768) * 256)
+            t = round((round(v / STEP) * STEP + 32768) * 256)
             row += bytes(((t >> 16) & 255, (t >> 8) & 255, t & 255))
         rows.append(bytes(row))
     os.makedirs(os.path.dirname(path), exist_ok=True)
