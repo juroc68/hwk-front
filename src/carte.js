@@ -19,6 +19,8 @@ export function createMap(container) {
     maxBounds: [[MAP[0], MAP[1]], [MAP[2], MAP[3]]],
     attributionControl: false,
     canvasContextAttributes: { antialias: true },
+    // les écrans de téléphone (×3) quadrupleraient presque le travail du GPU pour une différence invisible
+    pixelRatio: Math.min(devicePixelRatio, 2),
     style: {
       version: 8,
       sources: {
